@@ -1,0 +1,23 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.app {
+    min-height: 100vh;
+    background-color: gray;
+    display: flex;
+    justify-content: center;
+    gap: 3em;
+    padding: 3em 0;
+}
+
+.editor-container {
+    width: 750px;
+}
+
+.resume-container {
+    width: 750px;
+    height: 900px;
+}
