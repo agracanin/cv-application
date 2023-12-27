@@ -14,7 +14,7 @@ export default function PersonalForm() {
                 <input type="email" id="email" placeholder="Enter email" /* data-key={fullName} value={""} */ />
             </div>
             <div className="input-container">
-                <label className="input-title" htmlFor="phone-number">Phone number</label>
+                <label className="input-title" htmlFor="phone-number">Phone Number</label>
                 <input type="tel" id="phone-number" placeholder="Enter phone number" /* data-key={fullName} value={""} */ />
             </div>
             <div className="input-container">

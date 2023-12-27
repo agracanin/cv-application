@@ -6,7 +6,7 @@
 
 .app {
     min-height: 100vh;
-    background-color: gray;
+    background-color: #f3f4f6;
     display: flex;
     justify-content: center;
     gap: 3em;
