@@ -1,4 +1,3 @@
-/* save coplor e6e8e6 as variable */
 :root {
     --background-color: #e6e8e6;
     --darker-background-color: #ced0ce;
@@ -26,7 +25,8 @@ body {
 .editor {
     width: 400px;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    gap: 2rem;
 }
 
 .app {
@@ -47,9 +47,9 @@ body {
 .input-form {
     background-color: #FFFFFF;
     padding: 1rem 2rem;
-    border-radius: 0.75rem;
+    border-radius: 0 0 0.75rem 0.75rem;
     width: 100%;
-    height: 350px;
+    min-height: 350px;
 }
 
 .single-input {
@@ -95,4 +95,12 @@ body {
     height: 20px;
     border-radius: 50%;
     background-color: white;
+}
+
+.form-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 1rem 2rem;
 }

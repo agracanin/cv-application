@@ -6,15 +6,15 @@ export default function PersonalDisplay({ personalInfo }) {
             <div className="contact-info">
                 <div className="contact-group">
                     <div className="icon-holder"></div>
-                    <span class="contact-text">{personalInfo.email}</span>
+                    <span className="contact-text">{personalInfo.email}</span>
                 </div>
                 <div className="contact-group">
                     <div className="icon-holder"></div>
-                    <span class="contact-text">{personalInfo.phone}</span>
+                    <span className="contact-text">{personalInfo.phone}</span>
                 </div>
                 <div className="contact-group">
                     <div className="icon-holder"></div>
-                    <span class="contact-text">{personalInfo.address}</span>
+                    <span className="contact-text">{personalInfo.address}</span>
                 </div>
             </div>
         </div>
