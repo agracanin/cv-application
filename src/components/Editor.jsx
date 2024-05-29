@@ -2,18 +2,14 @@ import PersonalForm from "./personal-info/PersonalForm"
 import EducationForm from "./education/EducationForm"
 
 
-const Editor = ({ personalInfo, handlePersonalInput, educationInfo, handleEducationInput }) => {
+const Editor = ({ personalInfo, handlePersonalInput, educationInfo, addEducation }) => {
     return (
       <div className="editor">
         <PersonalForm personalInfo={personalInfo} handlePersonalInput={handlePersonalInput} />
-        {educationInfo.map((edu, index) => (
           <EducationForm
-            key={index}
-            educationInfo={edu}
-            handleEducationInput={handleEducationInput}
-            index={index}
+            educationInfo={educationInfo}
+            handleEducation={addEducation}
           />
-        ))}
       </div>
     );
   };

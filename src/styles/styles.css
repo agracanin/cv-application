@@ -50,6 +50,8 @@ body {
     border-radius: 0 0 0.75rem 0.75rem;
     width: 100%;
     min-height: 350px;
+    display: flex;
+    flex-direction: column;
 }
 
 .single-input {
@@ -103,4 +105,12 @@ body {
     align-items: center;
     background-color: white;
     padding: 1rem 2rem;
+    cursor: pointer;
+}
+
+.add-btn{
+    padding: 0.25rem 1rem;
+    margin-top: 0.5rem;
+    align-self: center;
+    cursor: pointer;
 }

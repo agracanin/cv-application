@@ -1,7 +1,7 @@
 import FormInput from "../FormInput";
 import { useState } from "react";
 
-const EducationForm = ({ educationInfo, handleEducationInput, index }) => {
+const EducationForm = ({ educationInfo, handleEducation }) => {
     const [isCollapsed, setIsCollapsed] = useState(true);
 
     const toggleCollapse = () => {
@@ -23,36 +23,33 @@ const EducationForm = ({ educationInfo, handleEducationInput, index }) => {
       type="text"
       name="school"
       value={educationInfo.school}
-      handleChange={(e) => handleEducationInput(e, index)}
     />
     <FormInput
       label="Degree"
       type="text"
       name="degree"
       value={educationInfo.degree}
-      handleChange={(e) => handleEducationInput(e, index)}
     />
     <FormInput
       label="Start Date"
       type="text"
       name="start"
       value={educationInfo.start}
-      handleChange={(e) => handleEducationInput(e, index)}
     />
     <FormInput
       label="Graduation Date"
       type="text"
       name="graduation"
       value={educationInfo.graduation}
-      handleChange={(e) => handleEducationInput(e, index)}
     />
     <FormInput
       label="Location"
       type="text"
       name="location"
       value={educationInfo.location}
-      handleChange={(e) => handleEducationInput(e, index)}
     />
+
+    <button className="add-btn" onClick={handleEducation}>Add</button>
         </form>
       )}
     </div>

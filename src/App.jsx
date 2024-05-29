@@ -21,30 +21,20 @@ function App() {
     })
   }
 
-  const[education, setEducation] = useState([
+  const [education, setEducation] = useState([
     {
-      school: 'University of Life',
-      degree: 'Bachelor of Science in Computer Science',
-      start: 'August 2015',
-      graduation: 'May 2019',
-      location: 'New York, NY',
+      school: 'University of Nowhere',
+      degree: 'B.A. in Nothing',
+      start: 'August 2000',
+      graduation: 'May 2004',
+      location: 'Nowhere, USA',
     },
-    // {
-    //   school: 'School of Hard Knocks',
-    //   degree: 'Bachelor of Arts in English',
-    //   start: 'August 2011',
-    //   graduation: 'May 2015',
-    //   location: 'New York, NY',
-    // },
-  ])
+  ]);
 
-  const handleEducationInput = (e, index) => {
-    const { name, value } = e.target
-    const updatedEducation = [...education]
-    updatedEducation[index][name] = value
-    setEducation(updatedEducation)
-  }
 
+  const addEducation = (newEducation) => {
+    setEducation([...education, newEducation]);
+  };
 
 
   return (
@@ -52,8 +42,7 @@ function App() {
       <Editor 
       personalInfo={personalInfo} 
       handlePersonalInput={handlePersonalInput} 
-      educationInfo={education}
-      handleEducationInput={handleEducationInput}
+      addEducation={addEducation}
       />
       <Resume personalInfo={personalInfo} />
     </div>
