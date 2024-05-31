@@ -43,8 +43,12 @@ function App() {
       personalInfo={personalInfo} 
       handlePersonalInput={handlePersonalInput} 
       addEducation={addEducation}
+      educationInfo={education}
       />
-      <Resume personalInfo={personalInfo} />
+      <Resume 
+      personalInfo={personalInfo}
+      educationInfo={education}
+      />
     </div>
   )
 }
